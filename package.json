@@ -1,6 +1,6 @@
 {
   "name": "node-ethwallet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ethwallet",
   "main": "index.js",
   "bin": {
@@ -20,12 +20,13 @@
     "url": "https://github.com/xuxihai123/ethwallet/issues"
   },
   "dependencies": {
+    "commander": "^5.1.0",
     "keccakjs": "^0.2.3",
     "secp256k1": "^4.0.0"
   },
   "devDependencies": {
-    "mocha": "5.2.0",
-    "eslint": "^6.x"
+    "eslint": "^6.x",
+    "mocha": "5.2.0"
   },
   "homepage": "https://github.com/xuxihai123/ethwallet#readme"
 }
