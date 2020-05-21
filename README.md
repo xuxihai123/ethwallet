@@ -10,7 +10,7 @@ nodejs cli to generate eth wallet
 ## Installation
 
 ```bash
-npm install ethwallet -g
+npm install node-ethwallet -g
 ```
 
 ## Usage
