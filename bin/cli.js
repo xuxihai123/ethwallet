@@ -4,8 +4,9 @@ var program = require('commander');
 var fs = require('fs');
 var path = require('path');
 var generate = require('../lib/generate');
+var pkg = require('../package.json');
 program
-  .version('0.0.1')
+  .version(pkg.version)
   .usage('[options] <privKey> ')
   .option('-k,--key [value]', 'set generate address with private key');
 program.on('--help', function() {
@@ -22,7 +23,7 @@ function start() {
   } else {
     const generateObj = generate();
     console.log('\tgenerate eth wallet:');
-    console.log(`\n\taddress: ${generateObj.address}\n\tprivKey: ${generateObj.priv}`);
+    console.log(`\taddress: ${generateObj.address}\n\tprivKey: ${generateObj.priv}`);
     console.log('tip: please backup your private key! important!');
   }
 }
