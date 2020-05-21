@@ -1,0 +1,31 @@
+{
+  "name": "ethwallet",
+  "version": "1.0.0",
+  "description": "ethwallet",
+  "main": "index.js",
+  "bin": {
+    "ethwalletjs": "./bin/cli.js"
+  },
+  "scripts": {
+    "lint": "eslint ./",
+    "test": "mocha  --check-leaks --bail --exit --reporter spec test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuxihai123/ethwallet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xuxihai123/ethwallet/issues"
+  },
+  "dependencies": {
+    "keccakjs": "^0.2.3",
+    "secp256k1": "^4.0.0"
+  },
+  "devDependencies": {
+    "mocha": "5.2.0",
+    "eslint": "^6.x"
+  },
+  "homepage": "https://github.com/xuxihai123/ethwallet#readme"
+}
